@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    /* overflow: hidden; */
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    height: 100px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;
+}
+/* Navigation */
+
+.navbar{
+    text-transform: initial;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, 0.4)!important;
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-top:.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active, 
+    .navbar-dark .navbar-nav .nav-link:hover{
+        color: #1ebba3;
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+  }
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .home-inner{
+      background-image: url(img/banner.png);      
+
+  }
+  .caption{
+      width: 100%;
+      max-width:100%;
+      position: absolute;
+      top: 32%;
+      height: 112px;      
+      z-index: 1;
+      color: #fff;
+      text-transform: uppercase;      
+  }
+  .text-left-r{
+      left: 3%;
+  }
+  .caption h1{
+    font-family: lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+.caption h3{
+    font-family:lato;
+    font-size: .8rem;    
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom:2rem;
+    display: block;
+    line-height: 45px;
+}
+
+.btn-lg{
+    border-width: medium;
+    border-radius: 2px;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    background: #ffffff;    
+    /* width: 30%; */
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+line-height: 19px;
+
+color: #3E3655;
+text-transform: none;
+transition: 1s ease ease-in;
+}
+.btn-lg:hover{
+    background:transparent;
+    color:#fff;
+    border: 1px solid #fff;
+
+
+}
+
+[class*="col-"] {
+    padding: 1rem;
+  }
+  
+  /*--- Bootstrap Mobile Gutter Fix --*/
+  .row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+  }
+  
+  /*--- Fix for Fixed Navbar jumping on scroll --*/
+  .fixed-top  {
+   -webkit-backface-visibility: hidden;
+  }
+
+  .justif{
+      text-align: justify;
+      font-family: lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 200%;
+/* or 26px */
+
+
+/* color: #4F4F4F; */
+  }
+  /* .resi{
+    position: absolute;
+    width: 500px;
+  } */
+  .narrow img{
+      width:95%
+  }
+
+  h1 .text-left{
+      padding: 2.4rem;
+  }
+.pado{
+font-family: lato;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 10px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #3E3655;
+padding-bottom: 56px;
+}
+  .narrow{
+      padding:50px;
+  }
+.oval{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(303.91deg, #8A8AF4 7.57%, #3984DD 94.39%);
+mix-blend-mode: normal;
+opacity: 0.14;
+box-shadow: 0px 52px 85px rgba(0, 0, 0, 0.0873528);
+}
+
+svg.bi.bi-check-circle {
+    margin-top: 4px;
+    float: left;
+    /* padding-right: 0.5vw; */
+}
+.justifyer{
+    text-align: justify;
+    font-family: lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    padding-left: 1.6rem;
+}
+.pageback{
+    /* position: absolute;    */
+    /* height: 652px; */
+    /* width: 104%;
+    left: 0px; */
+    /* top: 1941px; */
+     color: #ffffff;
+    background:#3E3655;
+    padding-left:20px; 
+}
+
+/* or 63px */
+/* .row  .col-md-6 h1{
+    font-family: lato;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 157%;
+    color: #FFFFFF;
+    text-align: justify;
+    /* padding-top: 40%;
+    padding-bottom: 3%;   
+} */
+
+
+.col-md-6.shif {
+    padding-left: 5%;
+}
+.tex-t{
+    font-family: lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 157%;
+        color: #FFFFFF;
+        text-align: justify;
+        padding-top: 40%;
+        padding-bottom: 3%;
+}
+
+h3.pad-bu {
+    padding-bottom: 5%;
+    /* font-family: lato; */
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 157%;
+}
+
+
+.col-md-6.col-sm-12.imagio{
+    padding-top:10%;
+
+}
+
+.dwn{
+    font-family: lato;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 157%;
+/* or 39px */
+
+
+color: #4F4F4F;
+}
+.dwn2{
+    font-family: lato;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 157%;
+text-align: left;
+/* or 79px */
+
+
+color: #3E3655;
+}
+/* div#testimonials {
+    padding-bottom: 50%;
+} */
+.colored-pur{
+    background: #3E3655;
+    text-align: left;
+    color: #fff;
+    font-family: lato;
+    padding: 15px 30px;
+    margin-right: 73%;
+    width: 40%;
+    border-radius: 7px;
+}
+.tex-par{
+    font-family: Lato;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 157%;
+/* or 55px */
+
+
+color: #3E3655;
+}
+
+.input-group {
+    width: 66%;
+    margin-left: 20%;
+    padding: 21px 15px;
+
+}
+input.form-control {
+    padding: 30px;
+    background: #F5F5F5;
+border: 0.3px solid #F5F5F5;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.btn-outline-secondary{
+    background: #3E3655;
+border-radius: 4px;
+width: 172px;
+color: #fff;
+font-family: lato;
+}
+.cpit{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.foner{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+img.reshape {
+    width: 25px;
+    margin-left: 50px;
+}
+
+.row.pageback.narrow.sof {
+    padding-left: 6%;
+}
+.squee {
+    margin-left: -10%;
+}
